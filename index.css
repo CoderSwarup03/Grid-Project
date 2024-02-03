@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+
+    height: 60px;
+    width: 100vw;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 5px;
+}
+.logo img{
+    height: 45px;
+    width: 100%;
+    
+}
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    margin: 8px;
+    font-family: "Segoe UI";
+}
+.right ul{
+    display: flex;
+    gap: 33px;
+}
+.right ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /*color: #fff;*/
+}
+.right ul li span{
+    padding: 0 4px;
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+    gap: 23px;
+
+}
+.first-span{
+    font-size: 35px;
+}
+.section-div{
+    font-size: 20px;
+}
+.btn{
+    padding: 8px 8px;
+    color: white;
+    background: #00b6d1;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 12px 0;
+}
+.btn-small{
+    padding: 8px 8px;
+    color: white;
+    background: #00b6d1;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.second{
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
+    max-width:65vw;
+    margin: auto;
+}
+.item .green{
+    background-color: green;
+}
+.item{
+    padding: 28px;
+    background-color: #19dddd;
+    border-radius: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.item_lang{
+    font-weight: 800;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.download{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 12px;
+}
+.download img{
+    height: 44px;
+    width: 44px;
+    padding: 2px;
+
+}
+.download :nth-child(2){
+    font-size: 25px;
+}
+@media screen and (max-width: 840px) {
+    .grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 500px) {
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
